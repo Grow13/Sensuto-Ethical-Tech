@@ -1,0 +1,154 @@
+{
+  "version": 20211123,
+  "generator": "kicad",
+  "kicad_version": "6.0",
+  "sheet": [
+    {
+      "uuid": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+      "layer": "F.Cu",
+      "title": "Sensuto Ring Schematic v0.1",
+      "description": "Ethical sensutogenic wearable - Co-created human+AI",
+      "file": "sensuto_ring.kicad_sch"
+    }
+  ],
+  "symbols": [
+    {
+      "lib_id": "power:GND",
+      "at": [ 50, 100 ],
+      "uuid": "gnd_1"
+    },
+    {
+      "lib_id": "power:+3V3",
+      "at": [ 50, 150 ],
+      "uuid": "pwr_1"
+    },
+    {
+      "lib_id": "mcunrf52833:nRF52833_QFNN48",
+      "at": [ 150, 100 ],
+      "uuid": "u1",
+      "fields": [
+        { "name": "Reference", "value": "U1" },
+        { "name": "Value", "value": "nRF52833" },
+        { "name": "Footprint", "value": "Package_DFN_QFN:QFN-48-1EP_6x6mm_P0.4mm_EP4.2x4.2mm" }
+      ]
+    },
+    {
+      "lib_id": "sensor:MAX30102",
+      "at": [ 300, 100 ],
+      "uuid": "u2",
+      "fields": [
+        { "name": "Reference", "value": "U2" },
+        { "name": "Value", "value": "MAX30102" },
+        { "name": "Footprint", "value": "Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm" }
+      ]
+    },
+    {
+      "lib_id": "Regulator_Linear:LTC3108",
+      "at": [ 150, 250 ],
+      "uuid": "u3",
+      "fields": [
+        { "name": "Reference", "value": "U3" },
+        { "name": "Value", "value": "LTC3108" },
+        { "name": "Footprint", "value": "Package_SO:MSOP-10_3x3mm_P0.5mm" }
+      ]
+    },
+    {
+      "lib_id": "Device:C",
+      "at": [ 150, 300 ],
+      "uuid": "c1",
+      "fields": [
+        { "name": "Reference", "value": "C1" },
+        { "name": "Value", "value": "10uF" },
+        { "name": "Footprint", "value": "Capacitor_SMD:C_0402_1005Metric" }
+      ]
+    },
+    {
+      "lib_id": "Device:C",
+      "at": [ 150, 350 ],
+      "uuid": "c2",
+      "fields": [
+        { "name": "Reference", "value": "C2" },
+        { "name": "Value", "value": "0.1F" },
+        { "name": "Footprint", "value": "Capacitor_SMD:CP_Elec_3x5.3" }
+      ]
+    },
+    {
+      "lib_id": "Device:L",
+      "at": [ 300, 250 ],
+      "uuid": "l1",
+      "fields": [
+        { "name": "Reference", "value": "L1" },
+        { "name": "Value", "value": "2.2uH" },
+        { "name": "Footprint", "value": "Inductor_SMD:L_0402_1005Metric" }
+      ]
+    },
+    {
+      "lib_id": "Device:R",
+      "at": [ 300, 300 ],
+      "uuid": "r1",
+      "fields": [
+        { "name": "Reference", "value": "R1" },
+        { "name": "Value", "value": "10k" },
+        { "name": "Footprint", "value": "Resistor_SMD:R_0402_1005Metric" }
+      ]
+    },
+    {
+      "lib_id": "Connector:Conn_01x02",
+      "at": [ 50, 250 ],
+      "uuid": "j1",
+      "fields": [
+        { "name": "Reference", "value": "J1" },
+        { "name": "Value", "value": "Skin_Electrode" },
+        { "name": "Footprint", "value": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" }
+      ]
+    },
+    {
+      "lib_id": "Device:LED",
+      "at": [ 300, 150 ],
+      "uuid": "led1",
+      "fields": [
+        { "name": "Reference", "value": "LED1" },
+        { "name": "Value", "value": "WS2812B-MINI" },
+        { "name": "Footprint", "value": "LED_SMD:LED_WS2812B_PLCC4_3.5x3.5mm" }
+      ]
+    },
+    {
+      "lib_id": "Device:Motor",
+      "at": [ 300, 200 ],
+      "uuid": "m1",
+      "fields": [
+        { "name": "Reference", "value": "M1" },
+        { "name": "Value", "value": "LRA-0820-001" },
+        { "name": "Footprint", "value": "Motor_Vibration:VibrationMotor_8.0x2.7mm" }
+      ]
+    }
+  ],
+  "wires": [
+    { "uuid": "wire1", "start": [ 60, 150 ], "end": [ 140, 150 ] },
+    { "uuid": "wire2", "start": [ 60, 100 ], "end": [ 140, 100 ] },
+    { "uuid": "wire3", "start": [ 160, 150 ], "end": [ 290, 150 ] },
+    { "uuid": "wire4", "start": [ 160, 100 ], "end": [ 290, 100 ] },
+    { "uuid": "wire5", "start": [ 60, 250 ], "end": [ 140, 250 ] }
+  ],
+  "labels": [
+    { "uuid": "label1", "at": [ 100, 155 ], "text": "+3V3", "shape": "input" },
+    { "uuid": "label2", "at": [ 100, 105 ], "text": "GND", "shape": "input" },
+    { "uuid": "label3", "at": [ 200, 155 ], "text": "I2C_SDA", "shape": "input" },
+    { "uuid": "label4", "at": [ 200, 105 ], "text": "I2C_SCL", "shape": "input" },
+    { "uuid": "label5", "at": [ 100, 255 ], "text": "SKIN_IN", "shape": "input" }
+  ],
+  "texts": [
+    {
+      "uuid": "text1",
+      "at": [ 200, 50 ],
+      "text": "Sensuto Ring v0.1 - Ethical Sensutogenic Wearable",
+      "size": 1.5
+    },
+    {
+      "uuid": "text2",
+      "at": [ 200, 400 ],
+      "text": "Co-created by human + AI | Kawar∞8 Ethical License",
+      "size": 1.0
+    }
+  ]
+}
