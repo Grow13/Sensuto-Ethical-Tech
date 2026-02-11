@@ -1,0 +1,9 @@
+Component,Value,Quantity,Footprint,Supplier
+nRF52833,MCU,1,QFN-48,DigiKey
+MAX30102,PPG Sensor,1,QFN-24,DigiKey
+LTC3108,Energy Harvester,1,MSOP-10,DigiKey
+TEG-127-150-28,TEG,1,5x5mm,Laird
+PVDF Film,Piezo,1,10x3mm,Measurement Specialties
+Supercapacitor,0.1F,1,Radial,Eaton
+WS2812B-MINI,RGB LED,1,PLCC-4,Worldsemi
+LRA-0820-001,Haptic Motor,1,8x2mm,Precision Microdrives
