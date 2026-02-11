@@ -1,0 +1,161 @@
+{
+  "version": 20211014,
+  "generator": "kicad_symbol_editor",
+  "symbols": [
+    {
+      "name": "TEG_5x5mm",
+      "reference": "TEG",
+      "footprint": "sensuto_footprints:TEG_5x5mm",
+      "description": "5x5mm Thermoelectric Generator - Converts body heat to µW",
+      "keywords": "teg thermoelectric generator energy harvesting",
+      "pins": [
+        {
+          "number": "1",
+          "name": "+",
+          "type": "passive",
+          "orientation": "right",
+          "position": [ 100, 0 ]
+        },
+        {
+          "number": "2",
+          "name": "-",
+          "type": "passive",
+          "orientation": "right",
+          "position": [ 100, -100 ]
+        }
+      ],
+      "rectangle": [ -50, -50, 50, 50 ],
+      "pin_names": { "offset": 20 },
+      "texts": [
+        {
+          "text": "TEG",
+          "position": [ 0, 0 ],
+          "justify": "center",
+          "layer": "F.SilkS"
+        }
+      ]
+    },
+    {
+      "name": "PVDF_Film",
+      "reference": "PVDF",
+      "footprint": "sensuto_footprints:PVDF_Film_Strip",
+      "description": "Piezoelectric PVDF Film Strip - Converts finger motion to µW",
+      "keywords": "pvdf piezo piezoelectric film energy harvesting",
+      "pins": [
+        {
+          "number": "1",
+          "name": "+",
+          "type": "passive",
+          "orientation": "right",
+          "position": [ 100, 0 ]
+        },
+        {
+          "number": "2",
+          "name": "-",
+          "type": "passive",
+          "orientation": "right",
+          "position": [ 100, -100 ]
+        }
+      ],
+      "rectangle": [ -50, -30, 50, 30 ],
+      "pin_names": { "offset": 20 },
+      "texts": [
+        {
+          "text": "PVDF",
+          "position": [ 0, 0 ],
+          "justify": "center",
+          "layer": "F.SilkS"
+        }
+      ]
+    },
+    {
+      "name": "Skin_Electrode",
+      "reference": "ELECTRODE",
+      "footprint": "sensuto_footprints:Skin_Electrode_Pad",
+      "description": "Biocompatible Ag/Cl Skin Electrode - For physiological sensing",
+      "keywords": "electrode skin ecg eeg biosignal",
+      "pins": [
+        {
+          "number": "1",
+          "name": "SIG",
+          "type": "passive",
+          "orientation": "down",
+          "position": [ -50, -100 ]
+        },
+        {
+          "number": "2",
+          "name": "GND",
+          "type": "passive",
+          "orientation": "down",
+          "position": [ 50, -100 ]
+        }
+      ],
+      "rectangle": [ -40, -20, 40, 20 ],
+      "pin_names": { "offset": 20 },
+      "texts": [
+        {
+          "text": "SKIN",
+          "position": [ 0, 0 ],
+          "justify": "center",
+          "layer": "F.SilkS"
+        }
+      ]
+    },
+    {
+      "name": "LRA_8mm",
+      "reference": "LRA",
+      "footprint": "sensuto_footprints:LRA_8mm",
+      "description": "Linear Resonant Actuator 8x2mm - Haptic feedback",
+      "keywords": "lra haptic actuator vibration motor",
+      "pins": [
+        {
+          "number": "1",
+          "name": "+",
+          "type": "passive",
+          "orientation": "left",
+          "position": [ -100, 0 ]
+        },
+        {
+          "number": "2",
+          "name": "-",
+          "type": "passive",
+          "orientation": "left",
+          "position": [ -100, -100 ]
+        }
+      ],
+      "circle": [ 0, 0, 40 ],
+      "pin_names": { "offset": 20 },
+      "texts": [
+        {
+          "text": "LRA",
+          "position": [ 0, 0 ],
+          "justify": "center",
+          "layer": "F.SilkS"
+        }
+      ]
+    },
+    {
+      "name": "Sensuto_Logo",
+      "reference": "LOGO",
+      "footprint": "",
+      "description": "Flor de infinitos cruzados - Símbolo Sensuto",
+      "keywords": "logo symbol sensuto kawari",
+      "pins": [],
+      "circle": [ 0, 0, 30 ],
+      "polyline": [
+        [ -30, 0, 30, 0 ],
+        [ 0, -30, 0, 30 ],
+        [ -20, -20, 20, 20 ],
+        [ -20, 20, 20, -20 ]
+      ],
+      "texts": [
+        {
+          "text": "+∞+",
+          "position": [ 0, 50 ],
+          "justify": "center",
+          "layer": "F.SilkS"
+        }
+      ]
+    }
+  ]
+}
