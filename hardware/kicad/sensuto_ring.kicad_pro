@@ -1,0 +1,21 @@
+{
+  "board": {},
+  "board_design_settings": {
+    "rules": {
+      "min_clearance": 0.2,
+      "min_track_width": 0.2
+    }
+  },
+  "project": {
+    "name": "sensuto_ring",
+    "version": 1
+  },
+  "schematic": {
+    "drawing": {
+      "page_layout_descr_file": ""
+    },
+    "libs": {
+      "active": []
+    }
+  }
+}
